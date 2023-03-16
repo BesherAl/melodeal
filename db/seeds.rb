@@ -68,7 +68,7 @@ puts "Creating Musicians"
     spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
     soundcloud_link: "https://soundcloud.com/RIHANNA",
     instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-    user: colleen
+    user: besher
 
   )
   file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912646/joel-vogt-XAdPSpLhHpg-unsplash_qjpxke.jpg")
@@ -102,7 +102,7 @@ piano_male_2 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912159/soundtrap-BU816BGrP0U-unsplash_wia3rv.jpg")
 piano_male_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -135,7 +135,7 @@ Package.create!(
     spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
     soundcloud_link: "https://soundcloud.com/RIHANNA",
     instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-    user: colleen
+    user: besher
   )
   file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912645/jeana-bala-atD181puoXM-unsplash_f5hflb.jpg")
   cello_male_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -167,7 +167,7 @@ Package.create!(
     spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
     soundcloud_link: "https://soundcloud.com/RIHANNA",
     instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-    user: colleen
+    user: besher
   )
   file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912157/thiago-borrere-alvim-bf8APnBxoCk-unsplash_fg2vtk.jpg")
   guitar_male_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -199,7 +199,7 @@ Package.create!(
     spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
     soundcloud_link: "https://soundcloud.com/RIHANNA",
     instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-    user: colleen
+    user: besher
   )
   file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912150/anish-prajapati-5Sxh_zg5Des-unsplash_njzpww.jpg")
   vocal_female_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -231,7 +231,7 @@ Package.create!(
     spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
     soundcloud_link: "https://soundcloud.com/RIHANNA",
     instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-    user: colleen
+    user: besher
   )
   file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912154/kael-bloom-0Fko0cLI2VQ-unsplash_uj1ll3.jpg")
   cello_male_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -263,7 +263,7 @@ Package.create!(
     spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
     soundcloud_link: "https://soundcloud.com/RIHANNA",
     instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-    user: colleen
+    user: besher
   )
   file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912157/leonardo-zorzi-vVtkT4ny8hM-unsplash_d3jida.jpg")
   guitar_male_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -295,7 +295,7 @@ Package.create!(
     spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
     soundcloud_link: "https://soundcloud.com/RIHANNA",
     instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-    user: colleen
+    user: besher
   )
   file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912158/sam-moghadam-khamseh-VMFLpCrDpFM-unsplash_ixeddf.jpg")
   cello_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -327,7 +327,7 @@ Package.create!(
     spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
     soundcloud_link: "https://soundcloud.com/RIHANNA",
     instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-    user: colleen
+    user: besher
   )
   file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912155/luwadlin-bosman-pD1KUHCZ9Yc-unsplash_dkp1ua.jpg")
   violin_female_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -359,7 +359,7 @@ guitar_female_1 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912154/jakayla-toney-_SUo0bFBMRc-unsplash_urmkp6.jpg")
 guitar_female_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -391,7 +391,7 @@ vocal_female_2 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912150/ben-collins-uPmfKSOT5f8-unsplash_b5coj3.jpg")
 vocal_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -423,7 +423,7 @@ piano_male_1 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912155/platforma-za-drustveni-centar-cakovec-JKSXxal-UAI-unsplash_t478ru.jpg")
 piano_male_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -455,7 +455,7 @@ violin_female_2 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912153/lena-grimalkin-Wx6zfKBUJXg-unsplash_putcqn.jpg")
 violin_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -488,7 +488,7 @@ piano_male_3 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972901/Musician_new/wilhelm-gunkel-rXCSrGTQvq4-unsplash_hroqcd.jpg")
 piano_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -520,7 +520,7 @@ violin_female_3 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972901/Musician_new/tim-mossholder-RnFgs90NEHY-unsplash_bulkt9.jpg")
 violin_female_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -553,7 +553,7 @@ vocal_female_3 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972899/Musician_new/taylor-NeTf7NGXrtc-unsplash_gpxexj.jpg")
 vocal_female_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -585,7 +585,7 @@ violin_female_4 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972899/Musician_new/tetiana-shyshkina-nnfkYaeJAns-unsplash_c4ybxc.jpg")
 violin_female_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -617,7 +617,7 @@ vocal_male_3 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972899/Musician_new/mohd-zuber-saifi-pFwPM1_YI2M-unsplash_bygqid.jpg")
 vocal_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -649,7 +649,7 @@ guitar_male_3 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/caleb-shaver-ovJJZc0NUcE-unsplash_y9dx3r.jpg")
 guitar_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -681,7 +681,7 @@ guitar_male_4 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/dollar-gill-u3Shl0BTkJs-unsplash_kyge2n.jpg")
 guitar_male_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -713,7 +713,7 @@ cello_male_3 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/nikolay-liubenko-0DcBaMMGPcc-unsplash_p84ksp.jpg")
 cello_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -745,7 +745,7 @@ guitar_female_2 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/roihan-haidar-NP2WA90FdP8-unsplash_vmt0yb.jpg")
 guitar_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -777,7 +777,7 @@ cello_male_4 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/nikolay-liubenko-lrqCSGB1fDA-unsplash_fxaoso.jpg")
 cello_male_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -809,7 +809,7 @@ vocal_female_4 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972897/Musician_new/nicolas-lobos-hLPFMHb94lE-unsplash_heekef.jpg")
 vocal_female_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -841,7 +841,7 @@ vocal_female_5 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972896/Musician_new/claudia-raya-Ol0wJhWu3-s-unsplash_w3muwv.jpg")
 vocal_female_5.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -873,7 +873,7 @@ Package.create!(
 #   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
 #   soundcloud_link: "https://soundcloud.com/RIHANNA",
 #   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-#   user: colleen
+#   user: besher
 # )
 
 # file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_meloDeal/v1678972896/Musician_new/mohamed-nohassi-qF5CZ4LwY_g-unsplash_xcdbux.jpg")
@@ -906,7 +906,7 @@ vocal_male_4 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972896/Musician_new/melanie-van-leeuwen-QA-qQfWJM0E-unsplash_kr32jx.jpg")
 vocal_male_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -938,7 +938,7 @@ violin_male_1 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972896/Musician_new/miti-QsSUki9HTnE-unsplash_kxzmcg.jpg")
 violin_male_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -970,7 +970,7 @@ piano_male_5 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972894/Musician_new/matthew-lejune-hKJ2qXCPoUk-unsplash_qiaomo.jpg")
 piano_male_5.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -1002,7 +1002,7 @@ vocal_female_6 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972894/Musician_new/elizeu-dias-aZ3qiq1eTRk-unsplash_ot8gln.jpg")
 vocal_female_6.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -1034,7 +1034,7 @@ piano_female_1 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972893/Musician_new/christin-noelle-kgI-zb85Co8-unsplash_dwwerd.jpg")
@@ -1068,7 +1068,7 @@ piano_female_2 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972893/Musician_new/ashley-byrd-IuE8a94iZPQ-unsplash_kmls34.jpg")
@@ -1101,7 +1101,7 @@ guitar_female_3 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972893/Musician_new/jessica-oliveira-7JFtTcn6UUw-unsplash_lrpyv9.jpg")
 guitar_female_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -1133,7 +1133,7 @@ violin_male_2 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972891/Musician_new/kazuo-ota-VL3ehmA2zTQ-unsplash_ymejem.jpg")
 violin_male_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -1165,7 +1165,7 @@ guitar_male_5 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972890/Musician_new/ali-atiabii-yv-66V1PMeI-unsplash_sjafck.jpg")
 guitar_male_5.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
@@ -1197,7 +1197,7 @@ violin_male_3 = Musician.create!(
   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
   soundcloud_link: "https://soundcloud.com/RIHANNA",
   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
-  user: colleen
+  user: besher
 )
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972890/Musician_new/alex-blajan-WVeIm5qGUrQ-unsplash_szvum0.jpg")
 violin_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
