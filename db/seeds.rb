@@ -143,7 +143,7 @@ Package.create!(
 
   Package.create!(
     title: "Package Large",
-    description: "I will play 4 hours at your event. I would have to breaks with 10 minutes, besides that you will listen to the best live music!",
+    description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
     price: 350,
     hours: 4,
     musician_id: cello_male_1.id
