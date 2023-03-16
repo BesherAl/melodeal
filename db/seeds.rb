@@ -9,27 +9,26 @@
 require "faker"
 require "open-uri"
 
-type_of_musician = ["Vocal", "Drums", "Guitar", "Piano", "Violine" ]
 location = ["Berlin", "Hanover", "Hamburg", "Cologne", "Stuttgart"]
 description = [
-  "I am a classically trained pianist who attended the Juilliard School, where I honed my technical skills and developed a deep appreciation for the art of interpretation.",
-"As a graduate of the Curtis Institute of Music, I am a classically trained cellist who believes in the power of music to connect people and to heal the soul.",
-"I am a classically trained violinist who attended the New England Conservatory of Music, where I learned to channel my emotions through my music and to create unforgettable performances.",
-"As a graduate of the Royal Academy of Music, I am a classically trained flutist who is passionate about exploring the full range of colors and emotions in the flute repertoire.",
-"I am a classically trained guitarist who attended the Peabody Institute of the Johns Hopkins University, where I studied with some of the most renowned guitarists in the world and developed my own unique approach to the instrument.",
-"As a graduate of the Hochschule für Musik und Theater München, I am a classically trained pianist who is dedicated to exploring the full range of emotions and nuances in the piano repertoire.",
-"I am a classically trained cellist who attended the Shepherd School of Music at Rice University, where I learned to combine technical precision with emotional depth in my performances.",
-"As a graduate of the Royal College of Music, I am a classically trained oboist who is committed to using my music to connect with people and to inspire positive change in the world.",
-"I am a classically trained violist who attended the Yale School of Music, where I developed a deep appreciation for the richness and complexity of the viola repertoire.",
-"As a graduate of the École Normale de Musique de Paris, I am a classically trained pianist who believes in the power of music to inspire and uplift people from all walks of life.",
-"I am a classically trained clarinetist who attended the Eastman School of Music, where I learned to combine technical virtuosity with emotional sensitivity in my playing.",
-"As a graduate of the Manhattan School of Music, I am a classically trained bassoonist who is passionate about exploring the full range of colors and textures in the bassoon repertoire.",
-"I am a classically trained harpist who attended the Jacobs School of Music at Indiana University, where I learned to channel my emotions through my playing and to create truly unforgettable performances.",
-"As a graduate of the Sibelius Academy in Helsinki, I am a classically trained violinist who is dedicated to exploring the full range of emotions and colors in the violin repertoire.",
-"I am a classically trained pianist who attended the Conservatoire de Paris, where I learned to communicate the deepest emotions of the music through my playing.",
-"As a graduate of the Hochschule für Musik Hanns Eisler Berlin, I am a classically trained double bassist who is committed to using my music to create connections between people and to inspire positive change in the world.",
-"I am a classically trained trumpeter who attended the Conservatorium van Amsterdam, where I learned to combine technical precision with emotional expression in my playing.",
-"As a graduate of the Royal Northern College of Music, I am a classically trained percussionist who is passionate about exploring the full range of colors and textures in the percussion repertoire.",
+"I am a classically trained artist who attended the Juilliard School, where I honed my technical skills and developed a deep appreciation for the art of interpretation.",
+"As a graduate of the Curtis Institute of Music, I am a classically trained musician who believes in the power of music to connect people and to heal the soul.",
+"I am a classically trained artist who attended the New England Conservatory of Music, where I learned to channel my emotions through my music and to create unforgettable performances.",
+"As a graduate of the Royal Academy of Music, I am a classically trained musician who is passionate about exploring the full range of colors and emotions in the flute repertoire.",
+"I am a classically trained musician who attended the Peabody Institute of the Johns Hopkins University, where I studied with some of the most renowned musicians in the world and developed my own unique approach to the instrument.",
+"As a graduate of the Hochschule für Musik und Theater München, I am a classically trained artist who is dedicated to exploring the full range of emotions and nuances in the piano repertoire.",
+"I am a classically trained artist who attended the Shepherd School of Music at Rice University, where I learned to combine technical precision with emotional depth in my performances.",
+"As a graduate of the Royal College of Music, I am a classically trained musician who is committed to using my music to connect with people and to inspire positive change in the world.",
+"I am a classically trained artist who attended the Yale School of Music, where I developed a deep appreciation for the richness and complexity of the musicial repertoire.",
+"As a graduate of the École Normale de Musique de Paris, I am a classically trained musician who believes in the power of music to inspire and uplift people from all walks of life.",
+"I am a classically trained musician who attended the Eastman School of Music, where I learned to combine technical virtuosity with emotional sensitivity in my playing.",
+"As a graduate of the Manhattan School of Music, I am a classically trained artist who is passionate about exploring the full range of colors and textures in the bassoon repertoire.",
+"I am a classically trained artist who attended the Jacobs School of Music at Indiana University, where I learned to channel my emotions through my playing and to create truly unforgettable performances.",
+"As a graduate of the Sibelius Academy in Helsinki, I am a classically trained musician who is dedicated to exploring the full range of emotions and colors in the violin repertoire.",
+"I am a classically trained musician who attended the Conservatoire de Paris, where I learned to communicate the deepest emotions of the music through my playing.",
+"As a graduate of the Hochschule für Musik Hanns Eisler Berlin, I am a classically trained musician who is committed to using my music to create connections between people and to inspire positive change in the world.",
+"I am a classically trained musician who attended the Conservatorium van Amsterdam, where I learned to combine technical precision with emotional expression in my playing.",
+"As a graduate of the Royal Northern College of Music, I am a classically trained musician who is passionate about exploring the full range of colors and textures in the musicial repertoire.",
 ]
 
 puts "Deleting current Database entries...!"
@@ -84,7 +83,7 @@ puts "Creating Musicians"
   )
 
   Package.create!(
-    title: "Package Small",
+    title: "Offer Small",
     description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 200,
     hours: 2,
@@ -109,7 +108,7 @@ file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000
 piano_male_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
 Package.create!(
-  title: "Package Large",
+  title: "Offer Large",
   description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
   price: 350,
   hours: 4,
@@ -117,7 +116,7 @@ Package.create!(
 )
 
 Package.create!(
-  title: "Package Small",
+  title: "Offer Small",
   description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
   price: 200,
   hours: 2,
@@ -150,7 +149,7 @@ Package.create!(
   )
 
   Package.create!(
-    title: "Package Small",
+    title: "Offer Small",
     description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 200,
     hours: 2,
@@ -174,7 +173,7 @@ Package.create!(
   guitar_male_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
   Package.create!(
-    title: "Package Large",
+    title: "Offer Large",
     description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 350,
     hours: 4,
@@ -182,7 +181,7 @@ Package.create!(
   )
 
   Package.create!(
-    title: "Package Small",
+    title: "Offer Small",
     description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 200,
     hours: 2,
@@ -206,7 +205,7 @@ Package.create!(
   vocal_female_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
   Package.create!(
-    title: "Package Large",
+    title: "Offer Large",
     description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 350,
     hours: 4,
@@ -214,7 +213,7 @@ Package.create!(
   )
 
   Package.create!(
-    title: "Package Small",
+    title: "Offer Small",
     description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 200,
     hours: 2,
@@ -238,7 +237,7 @@ Package.create!(
   cello_male_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
   Package.create!(
-    title: "Package Large",
+    title: "Offer Large",
     description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 350,
     hours: 4,
@@ -246,7 +245,7 @@ Package.create!(
   )
 
   Package.create!(
-    title: "Package Small",
+    title: "Offer Small",
     description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 200,
     hours: 2,
@@ -270,7 +269,7 @@ Package.create!(
   guitar_male_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
   Package.create!(
-    title: "Package Large",
+    title: "Offer Large",
     description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 350,
     hours: 4,
@@ -278,13 +277,12 @@ Package.create!(
   )
 
   Package.create!(
-    title: "Package Small",
+    title: "Offer Small",
     description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 200,
     hours: 2,
     musician_id:  guitar_male_2.id
   )
-
 
   cello_female_2 = Musician.create!(
     first_name: Faker::Name.female_first_name,
@@ -303,7 +301,7 @@ Package.create!(
   cello_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
   Package.create!(
-    title: "Package Large",
+    title: "Offer Large",
     description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 350,
     hours: 4,
@@ -311,7 +309,7 @@ Package.create!(
   )
 
   Package.create!(
-    title: "Package Small",
+    title: "Offer Small",
     description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 200,
     hours: 2,
@@ -319,7 +317,7 @@ Package.create!(
   )
 
   violin_female_1 = Musician.create!(
-    first_name: Faker::Name.male_first_name,
+    first_name: Faker::Name.female_first_name,
     last_name: Faker::Name.last_name,
     nickname: Faker::Music.band,
     location: location.sample,
@@ -335,7 +333,7 @@ Package.create!(
   violin_female_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
   Package.create!(
-    title: "Package Large",
+    title: "Offer Large",
     description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 350,
     hours: 4,
@@ -343,13 +341,12 @@ Package.create!(
   )
 
   Package.create!(
-    title: "Package Small",
+    title: "Offer Small",
     description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
     price: 200,
     hours: 2,
     musician_id:  violin_female_1.id
   )
-
 
 guitar_female_1 = Musician.create!(
   first_name: Faker::Name.female_first_name,
@@ -368,7 +365,7 @@ file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000
 guitar_female_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
 Package.create!(
-  title: "Package Large",
+  title: "Offer Large",
   description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
   price: 350,
   hours: 4,
@@ -376,13 +373,12 @@ Package.create!(
 )
 
 Package.create!(
-  title: "Package Small",
+  title: "Offer Small",
   description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
   price: 200,
   hours: 2,
   musician_id:  guitar_female_1.id
 )
-
 
 vocal_female_2 = Musician.create!(
   first_name: Faker::Name.female_first_name,
@@ -401,21 +397,20 @@ file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000
 vocal_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
 Package.create!(
-  title: "Package Large",
-  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
   price: 350,
   hours: 4,
   musician_id:  vocal_female_2.id
 )
 
 Package.create!(
-  title: "Package Small",
+  title: "Offer Small",
   description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
   price: 200,
   hours: 2,
   musician_id:  vocal_female_2.id
 )
-
 
 piano_male_1 = Musician.create!(
   first_name: Faker::Name.male_first_name,
@@ -434,7 +429,7 @@ file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000
 piano_male_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
 Package.create!(
-  title: "Package Large",
+  title: "Offer Large",
   description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
   price: 350,
   hours: 4,
@@ -442,16 +437,15 @@ Package.create!(
 )
 
 Package.create!(
-  title: "Package Small",
+  title: "Offer Small",
   description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
   price: 200,
   hours: 2,
   musician_id:  piano_male_1.id
 )
 
-
 violin_female_2 = Musician.create!(
-  first_name: Faker::Name.male_first_name,
+  first_name: Faker::Name.female_first_name,
   last_name: Faker::Name.last_name,
   nickname: Faker::Music.band,
   location: location.sample,
@@ -466,9 +460,8 @@ violin_female_2 = Musician.create!(
 file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/c_fill,h_1000,w_1000/v1678912153/lena-grimalkin-Wx6zfKBUJXg-unsplash_putcqn.jpg")
 violin_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
 
-
 Package.create!(
-  title: "Package Large",
+  title: "Offer Large",
   description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
   price: 350,
   hours: 4,
@@ -476,11 +469,754 @@ Package.create!(
 )
 
 Package.create!(
-  title: "Package Small",
+  title: "Offer Small",
   description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
   price: 200,
   hours: 2,
   musician_id:  violin_female_2.id
 )
 
+
+piano_male_3 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Piano",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972901/Musician_new/wilhelm-gunkel-rXCSrGTQvq4-unsplash_hroqcd.jpg")
+piano_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  piano_male_3.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  piano_male_3.id
+)
+
+violin_female_3 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Violin",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972901/Musician_new/tim-mossholder-RnFgs90NEHY-unsplash_bulkt9.jpg")
+violin_female_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  violin_female_3.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  violin_female_3.id
+)
+
+
+vocal_female_3 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Vocal",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972899/Musician_new/taylor-NeTf7NGXrtc-unsplash_gpxexj.jpg")
+vocal_female_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  vocal_female_3.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  vocal_female_3.id
+)
+
+violin_female_4 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Violin",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972899/Musician_new/tetiana-shyshkina-nnfkYaeJAns-unsplash_c4ybxc.jpg")
+violin_female_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  violin_female_4.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  violin_female_3.id
+)
+
+vocal_male_3 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Vocal",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972899/Musician_new/mohd-zuber-saifi-pFwPM1_YI2M-unsplash_bygqid.jpg")
+vocal_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  vocal_male_3.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  vocal_male_3.id
+)
+
+guitar_male_3 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Guitar",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/caleb-shaver-ovJJZc0NUcE-unsplash_y9dx3r.jpg")
+guitar_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  guitar_male_3.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  guitar_male_3.id
+)
+
+guitar_male_4 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Guitar",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/dollar-gill-u3Shl0BTkJs-unsplash_kyge2n.jpg")
+guitar_male_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  guitar_male_4.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  guitar_male_4.id
+)
+
+cello_male_3 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Cello",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/nikolay-liubenko-0DcBaMMGPcc-unsplash_p84ksp.jpg")
+cello_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it",
+  price: 350,
+  hours: 4,
+  musician_id: cello_male_3.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id: cello_male_3.id
+)
+
+guitar_female_2 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Guitar",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/roihan-haidar-NP2WA90FdP8-unsplash_vmt0yb.jpg")
+guitar_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  guitar_female_2.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  guitar_female_2.id
+)
+
+cello_male_4 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Cello",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972898/Musician_new/nikolay-liubenko-lrqCSGB1fDA-unsplash_fxaoso.jpg")
+cello_male_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it",
+  price: 350,
+  hours: 4,
+  musician_id: cello_male_4.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id: cello_male_4.id
+)
+
+vocal_female_4 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Vocal",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972897/Musician_new/nicolas-lobos-hLPFMHb94lE-unsplash_heekef.jpg")
+vocal_female_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  vocal_female_4.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  vocal_female_4.id
+)
+
+vocal_female_5 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Vocal",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972896/Musician_new/claudia-raya-Ol0wJhWu3-s-unsplash_w3muwv.jpg")
+vocal_female_5.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  vocal_female_5.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  vocal_female_5.id
+)
+
+# piano_male_4 = Musician.create!(
+#   first_name: Faker::Name.male_first_name,
+#   last_name: Faker::Name.last_name,
+#   nickname: Faker::Music.band,
+#   location: "Berlin",
+#   description: description.sample,
+#   type_of_musician: "Piano",
+#   youtube_link: "https://www.youtube.com/@LeWagon/about",
+#   spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+#   soundcloud_link: "https://soundcloud.com/RIHANNA",
+#   instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+#   user: colleen
+# )
+
+# file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_meloDeal/v1678972896/Musician_new/mohamed-nohassi-qF5CZ4LwY_g-unsplash_xcdbux.jpg")
+# piano_male_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+# Package.create!(
+#   title: "Offer Large",
+#   description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
+#   price: 350,
+#   hours: 4,
+#   musician_id: piano_male_4.id
+# )
+
+# Package.create!(
+#   title: "Offer Small",
+#   description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
+#   price: 200,
+#   hours: 2,
+#   musician_id: piano_male_4.id
+# )
+
+vocal_male_4 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Vocal",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972896/Musician_new/melanie-van-leeuwen-QA-qQfWJM0E-unsplash_kr32jx.jpg")
+vocal_male_4.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  vocal_male_4.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  vocal_male_4.id
+)
+
+violin_male_1 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Violin",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972896/Musician_new/miti-QsSUki9HTnE-unsplash_kxzmcg.jpg")
+violin_male_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  violin_male_1.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  violin_male_1.id
+)
+
+piano_male_5 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Piano",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972894/Musician_new/matthew-lejune-hKJ2qXCPoUk-unsplash_qiaomo.jpg")
+piano_male_5.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
+  price: 350,
+  hours: 4,
+  musician_id: piano_male_5.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
+  price: 200,
+  hours: 2,
+  musician_id: piano_male_5.id
+)
+
+vocal_female_6 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Vocal",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972894/Musician_new/elizeu-dias-aZ3qiq1eTRk-unsplash_ot8gln.jpg")
+vocal_female_6.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  vocal_female_6.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  vocal_female_6.id
+)
+
+piano_female_1 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Piano",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972893/Musician_new/christin-noelle-kgI-zb85Co8-unsplash_dwwerd.jpg")
+piano_female_1.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
+  price: 350,
+  hours: 4,
+  musician_id: piano_female_1.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id: piano_female_1.id
+)
+
+
+piano_female_2 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Piano",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972893/Musician_new/ashley-byrd-IuE8a94iZPQ-unsplash_kmls34.jpg")
+piano_female_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
+  price: 350,
+  hours: 4,
+  musician_id: piano_female_2.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id: piano_female_2.id
+)
+
+guitar_female_3 = Musician.create!(
+  first_name: Faker::Name.female_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Guitar",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972893/Musician_new/jessica-oliveira-7JFtTcn6UUw-unsplash_lrpyv9.jpg")
+guitar_female_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  guitar_female_3.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  guitar_female_3.id
+)
+
+violin_male_2 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Violin",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972891/Musician_new/kazuo-ota-VL3ehmA2zTQ-unsplash_ymejem.jpg")
+violin_male_2.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  violin_male_2.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  violin_male_2.id
+)
+
+guitar_male_5 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Guitar",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972890/Musician_new/ali-atiabii-yv-66V1PMeI-unsplash_sjafck.jpg")
+guitar_male_5.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  guitar_male_5.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  guitar_male_5.id
+)
+
+violin_male_3 = Musician.create!(
+  first_name: Faker::Name.male_first_name,
+  last_name: Faker::Name.last_name,
+  nickname: Faker::Music.band,
+  location: "Berlin",
+  description: description.sample,
+  type_of_musician: "Violin",
+  youtube_link: "https://www.youtube.com/@LeWagon/about",
+  spotify_link: "https://open.spotify.com/show/3BnStSrxm2bsGwNrWAS8P9",
+  soundcloud_link: "https://soundcloud.com/RIHANNA",
+  instagram_link: "https://www.instagram.com/womenintech/?hl=de",
+  user: colleen
+)
+file = URI.open("https://res.cloudinary.com/dpki23ark/image/upload/t_MeloDeal/v1678972890/Musician_new/alex-blajan-WVeIm5qGUrQ-unsplash_szvum0.jpg")
+violin_male_3.photo.attach(io: file, filename: 'musician.png', content_type: 'image/png')
+
+Package.create!(
+  title: "Offer Large",
+  description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 350,
+  hours: 4,
+  musician_id:  violin_male_3.id
+)
+
+Package.create!(
+  title: "Offer Small",
+  description: "I will be playing 2h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it. ",
+  price: 200,
+  hours: 2,
+  musician_id:  violin_male_3.id
+)
+
 puts "created #{Musician.count} musicians"
+puts "created #{Package.count} packages"

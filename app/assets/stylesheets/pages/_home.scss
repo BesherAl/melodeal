@@ -14,7 +14,7 @@ h1 {
 .banner {
   display: flex;
   align-items: center;
-  height: calc(100vh - 62px - 60px);
+   height: calc(100vh - 62px - 60px);
 }
 
 .banner-index-page {
@@ -94,14 +94,15 @@ h1 {
   .form-select {
     background-color: $search_form_background;
     border-color: $orange_primary;
-    color: $brown-secondary;
+    color: $dark-brown;
     border-radius: 15px;
   }
 
   .btn-second-orange {
     margin-top: 10px;
-    color: #bad871;
-    border: 1px solid #bad871;
+    color: $body-background;
+    background-color: $brown-secondary; opacity: 65%;
+    border: 1px solid $orange_primary;
   }
 }
 

@@ -6,6 +6,7 @@
       <%= simple_form_for [@musician, @package ] do |f| %>
         <%= f.input :price, label: "Price €"%>
         <%= f.input :hours, label: "Hours" %>
+        <%= f.input :title, label: "Title"%>
         <%= f.input :description, label: "Tell us more about the Package..." %>
         <%= f.submit "Add to your profile", class: "btn btn-first" %>
       <% end %>

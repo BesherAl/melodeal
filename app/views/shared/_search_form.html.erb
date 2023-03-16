@@ -1,11 +1,12 @@
   <div class="row justify-content-center">
     <div class="col-12 search_form_container">
       <%= simple_form_for(:filter, url: musicians_path, method: :get) do |f| %>
-        <%= f.input :location, collection: Musician.pluck(:location).uniq %>
-        <%# <%= f.input :type_of_event, collection: Musician.pluck(:type_of_event).uniq %> 
+        <%= f.input :location, collection: Musician.pluck(:location).uniq,
+        class: "search-align" %>
+        <%# <%= f.input :type_of_event, collection: Musician.pluck(:type_of_event).uniq %>
         <%# <%= f.input :date, label: "Date", prompt: "Select a date" %>
 
-        <%= f.button :submit, "find!", class: "btn btn-first w-100 mt-4" %>
+        <%= f.button :submit, "find!", class: "btn btn-first mt-4 find-button" %>
       <% end %>
       <%= link_to "see all musicians", musicians_path, class: "btn btn-second-orange w-100" %>
     </div>
