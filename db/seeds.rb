@@ -77,7 +77,7 @@ puts "Creating Musicians"
 
   Package.create!(
     title: "Package Large",
-    description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
+    description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it",
     price: 350,
     hours: 4,
     musician_id: cello_female_1.id
@@ -143,7 +143,7 @@ Package.create!(
 
   Package.create!(
     title: "Package Large",
-    description: "I will be playing 4h for your event, during which, there will be two 10 minutes intermissions, hopefully, you will enjoy my show as much as I enjoy creating it.",
+    description: "I will play 4 hours at your event. I would have to breaks with 10 minutes, besides that you will listen to the best live music!",
     price: 350,
     hours: 4,
     musician_id: cello_male_1.id
@@ -188,7 +188,6 @@ Package.create!(
     hours: 2,
     musician_id: guitar_male_1.id
   )
-
 
   vocal_female_1 = Musician.create!(
     first_name: Faker::Name.female_first_name,

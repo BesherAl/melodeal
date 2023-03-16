@@ -5,10 +5,11 @@
         <% else %>
           <%= image_tag message.user.photo, class: "profile-show" %>
         <% end %>
+        <br>
       <div class="info-container">
         <h3><b><%= musician.first_name %> <%= musician.last_name  %></b></h3>
         <h4><%= @musician.type_of_musician %> Artist</h4>
-        <br>
+
         <h4>&#128205; <%= @musician.location %></p></h4>
         <%= render "shared/social_links_musician", musician: @musician %>
       </div>
@@ -17,7 +18,7 @@
 
   <p class="about">
 
-  <p class="bg-white p-4"><%= @musician.description %></p>
+  <p class="bg-white p-4 musician-description"><%= @musician.description %></p>
 
   <%# <div class="d-flex align-items-center"> %>
     <div class="package-container">
